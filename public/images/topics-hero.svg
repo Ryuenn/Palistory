@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B0B0B"/>
+      <stop offset="1" stop-color="#1A1A1A"/>
+    </linearGradient>
+    <radialGradient id="glowTop1" cx="0.2" cy="0.3" r="0.5">
+      <stop offset="0" stop-color="#4B5D3A" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#4B5D3A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowTop2" cx="0.8" cy="0.7" r="0.5">
+      <stop offset="0" stop-color="#C8A96B" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#C8A96B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bgTop)"/>
+  <rect width="1600" height="900" fill="url(#glowTop1)"/>
+  <rect width="1600" height="900" fill="url(#glowTop2)"/>
+  <!-- Tatreez-inspired geometric pattern -->
+  <g stroke="#C8A96B" stroke-opacity="0.35" fill="none" stroke-width="1.5">
+    <g transform="translate(800 450)">
+      <polygon points="0,-200 60,-100 60,100 0,200 -60,100 -60,-100"/>
+      <polygon points="0,-160 50,-80 50,80 0,160 -50,80 -50,-80"/>
+      <polygon points="0,-120 36,-60 36,60 0,120 -36,60 -36,-60"/>
+      <polygon points="0,-80 24,-40 24,40 0,80 -24,40 -24,-40"/>
+      <line x1="-200" y1="0" x2="200" y2="0"/>
+      <line x1="0" y1="-200" x2="0" y2="200"/>
+    </g>
+    <!-- Surrounding diamonds -->
+    <g fill="#C62828" fill-opacity="0.5" stroke="none">
+      <polygon points="800,180 815,210 800,240 785,210"/>
+      <polygon points="800,660 815,690 800,720 785,690"/>
+      <polygon points="560,450 590,435 620,450 590,465"/>
+      <polygon points="980,450 1010,435 1040,450 1010,465"/>
+    </g>
+    <!-- Floating geometric shapes -->
+    <g opacity="0.5">
+      <polygon points="200,200 240,180 280,200 240,220"/>
+      <polygon points="1300,250 1340,230 1380,250 1340,270"/>
+      <polygon points="250,700 290,680 330,700 290,720"/>
+      <polygon points="1350,720 1390,700 1430,720 1390,740"/>
+    </g>
+  </g>
+</svg>

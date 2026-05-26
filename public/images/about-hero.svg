@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B0B0B"/>
+      <stop offset="1" stop-color="#15140F"/>
+    </linearGradient>
+    <radialGradient id="glowA1" cx="0.7" cy="0.4" r="0.5">
+      <stop offset="0" stop-color="#C8A96B" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#C8A96B" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowA2" cx="0.2" cy="0.7" r="0.5">
+      <stop offset="0" stop-color="#4B5D3A" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#4B5D3A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bgA)"/>
+  <rect width="1600" height="900" fill="url(#glowA1)"/>
+  <rect width="1600" height="900" fill="url(#glowA2)"/>
+  <!-- Hands / community circle -->
+  <g transform="translate(800 450)">
+    <circle r="240" fill="none" stroke="#C8A96B" stroke-opacity="0.4" stroke-width="2"/>
+    <circle r="180" fill="none" stroke="#C8A96B" stroke-opacity="0.25" stroke-width="1.5"/>
+    <circle r="120" fill="none" stroke="#C62828" stroke-opacity="0.5" stroke-width="2"/>
+  </g>
+  <!-- Figures around the circle -->
+  <g fill="#F5EBDC" fill-opacity="0.55">
+    <g transform="translate(800 210)">
+      <circle r="18"/>
+      <path d="M-30 60 Q 0 30 30 60 L 30 120 L -30 120 Z"/>
+    </g>
+    <g transform="translate(1000 320)">
+      <circle r="18"/>
+      <path d="M-30 60 Q 0 30 30 60 L 30 120 L -30 120 Z"/>
+    </g>
+    <g transform="translate(1000 580)">
+      <circle r="18"/>
+      <path d="M-30 60 Q 0 30 30 60 L 30 120 L -30 120 Z"/>
+    </g>
+    <g transform="translate(800 690)">
+      <circle r="18"/>
+      <path d="M-30 60 Q 0 30 30 60 L 30 120 L -30 120 Z"/>
+    </g>
+    <g transform="translate(600 580)">
+      <circle r="18"/>
+      <path d="M-30 60 Q 0 30 30 60 L 30 120 L -30 120 Z"/>
+    </g>
+    <g transform="translate(600 320)">
+      <circle r="18"/>
+      <path d="M-30 60 Q 0 30 30 60 L 30 120 L -30 120 Z"/>
+    </g>
+  </g>
+  <!-- Center heart/key -->
+  <g transform="translate(800 450)" fill="#C62828">
+    <path d="M0 30 C -25 0 -50 -10 -50 -30 C -50 -50 -30 -55 -20 -45 C -10 -55 0 -50 0 -30 C 0 -50 10 -55 20 -45 C 30 -55 50 -50 50 -30 C 50 -10 25 0 0 30 Z"/>
+  </g>
+</svg>

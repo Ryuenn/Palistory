@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="p2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#15140F"/>
+      <stop offset="1" stop-color="#0B0B0B"/>
+    </linearGradient>
+    <radialGradient id="p2g" cx="0.7" cy="0.3" r="0.6">
+      <stop offset="0" stop-color="#C8A96B" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#C8A96B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#p2)"/>
+  <rect width="800" height="600" fill="url(#p2g)"/>
+  <g stroke="#C8A96B" stroke-opacity="0.45" fill="none" stroke-width="2">
+    <g transform="translate(400 300)">
+      <polygon points="0,-130 40,-65 40,65 0,130 -40,65 -40,-65"/>
+      <polygon points="0,-90 28,-45 28,45 0,90 -28,45 -28,-45"/>
+      <polygon points="0,-50 16,-25 16,25 0,50 -16,25 -16,-25"/>
+    </g>
+  </g>
+  <g fill="#C62828" fill-opacity="0.6">
+    <polygon points="400,160 410,180 400,200 390,180"/>
+    <polygon points="400,400 410,420 400,440 390,420"/>
+  </g>
+</svg>

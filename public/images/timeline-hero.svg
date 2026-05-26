@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgT" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B0B0B"/>
+      <stop offset="1" stop-color="#14110D"/>
+    </linearGradient>
+    <radialGradient id="glowT" cx="0.5" cy="0.4" r="0.7">
+      <stop offset="0" stop-color="#C8A96B" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#C8A96B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bgT)"/>
+  <rect width="1600" height="900" fill="url(#glowT)"/>
+  <!-- Horizontal timeline line -->
+  <line x1="0" y1="500" x2="1600" y2="500" stroke="#C8A96B" stroke-opacity="0.4" stroke-width="2"/>
+  <!-- Timeline ticks/years -->
+  <g font-family="Georgia, serif" fill="#C8A96B" font-size="36" font-weight="bold" text-anchor="middle">
+    <g opacity="0.85">
+      <circle cx="200" cy="500" r="10" fill="#C62828"/>
+      <line x1="200" y1="500" x2="200" y2="430" stroke="#C8A96B" stroke-opacity="0.6"/>
+      <text x="200" y="410">1517</text>
+      <text x="200" y="565" font-size="16" fill="#F5EBDC" opacity="0.7">Ottoman</text>
+    </g>
+    <g opacity="0.85">
+      <circle cx="500" cy="500" r="10" fill="#C62828"/>
+      <line x1="500" y1="500" x2="500" y2="430" stroke="#C8A96B" stroke-opacity="0.6"/>
+      <text x="500" y="410">1917</text>
+      <text x="500" y="565" font-size="16" fill="#F5EBDC" opacity="0.7">Balfour</text>
+    </g>
+    <g opacity="1">
+      <circle cx="800" cy="500" r="14" fill="#C62828"/>
+      <line x1="800" y1="500" x2="800" y2="410" stroke="#C8A96B" stroke-opacity="0.8"/>
+      <text x="800" y="385" font-size="48" fill="#FAFAFA">1948</text>
+      <text x="800" y="575" font-size="18" fill="#F5EBDC">Nakba</text>
+    </g>
+    <g opacity="0.85">
+      <circle cx="1100" cy="500" r="10" fill="#C62828"/>
+      <line x1="1100" y1="500" x2="1100" y2="430" stroke="#C8A96B" stroke-opacity="0.6"/>
+      <text x="1100" y="410">1967</text>
+      <text x="1100" y="565" font-size="16" fill="#F5EBDC" opacity="0.7">Naksa</text>
+    </g>
+    <g opacity="0.85">
+      <circle cx="1400" cy="500" r="10" fill="#C62828"/>
+      <line x1="1400" y1="500" x2="1400" y2="430" stroke="#C8A96B" stroke-opacity="0.6"/>
+      <text x="1400" y="410">Today</text>
+      <text x="1400" y="565" font-size="16" fill="#F5EBDC" opacity="0.7">Memory</text>
+    </g>
+  </g>
+  <!-- Bottom geometric motif -->
+  <g stroke="#C8A96B" stroke-opacity="0.2" fill="none" stroke-width="1">
+    <path d="M0 800 L100 750 L200 800 L300 750 L400 800 L500 750 L600 800 L700 750 L800 800 L900 750 L1000 800 L1100 750 L1200 800 L1300 750 L1400 800 L1500 750 L1600 800"/>
+    <path d="M0 850 L100 800 L200 850 L300 800 L400 850 L500 800 L600 850 L700 800 L800 850 L900 800 L1000 850 L1100 800 L1200 850 L1300 800 L1400 850 L1500 800 L1600 850"/>
+  </g>
+</svg>

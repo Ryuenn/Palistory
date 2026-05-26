@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgS" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B0B0B"/>
+      <stop offset="0.5" stop-color="#1A1310"/>
+      <stop offset="1" stop-color="#2A1A14"/>
+    </linearGradient>
+    <radialGradient id="glowR" cx="0.7" cy="0.4" r="0.6">
+      <stop offset="0" stop-color="#C62828" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#C62828" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowG" cx="0.2" cy="0.8" r="0.6">
+      <stop offset="0" stop-color="#C8A96B" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#C8A96B" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dotsS" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+      <circle cx="30" cy="30" r="1.2" fill="#C8A96B" fill-opacity="0.25"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bgS)"/>
+  <rect width="1600" height="900" fill="url(#dotsS)"/>
+  <rect width="1600" height="900" fill="url(#glowR)"/>
+  <rect width="1600" height="900" fill="url(#glowG)"/>
+  <!-- Stylised olive branches -->
+  <g stroke="#C8A96B" stroke-opacity="0.35" fill="none" stroke-width="2">
+    <path d="M-50 700 Q 300 500 700 650 T 1700 600"/>
+    <path d="M-50 750 Q 400 600 800 720 T 1700 680"/>
+  </g>
+  <g fill="#4B5D3A" fill-opacity="0.5">
+    <ellipse cx="200" cy="640" rx="14" ry="5" transform="rotate(-20 200 640)"/>
+    <ellipse cx="280" cy="615" rx="14" ry="5" transform="rotate(-25 280 615)"/>
+    <ellipse cx="380" cy="600" rx="14" ry="5" transform="rotate(-15 380 600)"/>
+    <ellipse cx="520" cy="610" rx="14" ry="5" transform="rotate(-5 520 610)"/>
+    <ellipse cx="680" cy="635" rx="14" ry="5" transform="rotate(8 680 635)"/>
+    <ellipse cx="860" cy="640" rx="14" ry="5" transform="rotate(15 860 640)"/>
+    <ellipse cx="1040" cy="625" rx="14" ry="5" transform="rotate(10 1040 625)"/>
+    <ellipse cx="1240" cy="615" rx="14" ry="5" transform="rotate(0 1240 615)"/>
+    <ellipse cx="1440" cy="610" rx="14" ry="5" transform="rotate(-10 1440 610)"/>
+  </g>
+  <!-- Architecture silhouette -->
+  <g fill="#000" fill-opacity="0.55">
+    <path d="M0 900 L0 760 L120 760 L120 700 L180 700 L180 740 L240 740 L240 680 L320 680 L320 630 L360 600 L400 630 L400 700 L460 700 L460 660 L540 660 L540 740 L620 740 L620 700 L700 700 L700 750 L820 750 L820 690 L900 690 L900 640 L940 610 L980 640 L980 720 L1060 720 L1060 760 L1180 760 L1180 700 L1260 700 L1260 740 L1340 740 L1340 690 L1420 690 L1420 750 L1520 750 L1520 720 L1600 720 L1600 900 Z"/>
+  </g>
+  <!-- Dome accents -->
+  <g fill="#C8A96B" fill-opacity="0.6">
+    <circle cx="360" cy="600" r="6"/>
+    <circle cx="940" cy="610" r="6"/>
+  </g>
+</svg>

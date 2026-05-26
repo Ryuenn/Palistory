@@ -1,0 +1,25 @@
+﻿   ▲ Next.js 15.5.18
+   - Local:        http://localhost:3018
+   - Network:      http://10.246.98.12:3018
+
+ ✓ Starting...
+ ✓ Ready in 3.4s
+ ○ Compiling / ...
+ ✓ Compiled / in 6.8s (1287 modules)
+ GET / 200 in 7779ms
+ ○ Compiling /stories ...
+ ✓ Compiled /stories in 1887ms (1310 modules)
+ GET /stories 200 in 2640ms
+ ✓ Compiled /timeline in 496ms (1313 modules)
+ GET /timeline 200 in 1172ms
+ ○ Compiling /topics ...
+ ✓ Compiled /topics in 510ms (1320 modules)
+ GET /topics 200 in 1055ms
+ ✓ Compiled /media in 417ms (1335 modules)
+ GET /media 200 in 815ms
+ ○ Compiling /about ...
+ ✓ Compiled /about in 584ms (1342 modules)
+ GET /about 200 in 996ms
+ ○ Compiling /donation ...
+ ✓ Compiled /donation in 615ms (1357 modules)
+ GET /donation 200 in 1138ms

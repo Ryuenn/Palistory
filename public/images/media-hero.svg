@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgM" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B0B0B"/>
+      <stop offset="1" stop-color="#1A0F10"/>
+    </linearGradient>
+    <radialGradient id="glowM" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#C62828" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#C62828" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bgM)"/>
+  <rect width="1600" height="900" fill="url(#glowM)"/>
+  <!-- Film strip frames -->
+  <g fill="none" stroke="#C8A96B" stroke-opacity="0.45" stroke-width="2">
+    <rect x="120" y="320" width="220" height="160" rx="6"/>
+    <rect x="380" y="280" width="260" height="200" rx="6"/>
+    <rect x="680" y="240" width="300" height="240" rx="6"/>
+    <rect x="1020" y="280" width="260" height="200" rx="6"/>
+    <rect x="1320" y="320" width="220" height="160" rx="6"/>
+  </g>
+  <!-- Play button center -->
+  <g transform="translate(830 360)">
+    <circle r="60" fill="#C62828" fill-opacity="0.85"/>
+    <polygon points="-18,-26 -18,26 30,0" fill="#FAFAFA"/>
+  </g>
+  <!-- Film perforations -->
+  <g fill="#C8A96B" fill-opacity="0.3">
+    <g>
+      <rect x="100" y="240" width="20" height="14" rx="2"/>
+      <rect x="160" y="240" width="20" height="14" rx="2"/>
+      <rect x="220" y="240" width="20" height="14" rx="2"/>
+      <rect x="280" y="240" width="20" height="14" rx="2"/>
+      <rect x="340" y="240" width="20" height="14" rx="2"/>
+      <rect x="400" y="240" width="20" height="14" rx="2"/>
+      <rect x="460" y="240" width="20" height="14" rx="2"/>
+      <rect x="520" y="240" width="20" height="14" rx="2"/>
+      <rect x="580" y="240" width="20" height="14" rx="2"/>
+      <rect x="1040" y="240" width="20" height="14" rx="2"/>
+      <rect x="1100" y="240" width="20" height="14" rx="2"/>
+      <rect x="1160" y="240" width="20" height="14" rx="2"/>
+      <rect x="1220" y="240" width="20" height="14" rx="2"/>
+      <rect x="1280" y="240" width="20" height="14" rx="2"/>
+      <rect x="1340" y="240" width="20" height="14" rx="2"/>
+      <rect x="1400" y="240" width="20" height="14" rx="2"/>
+      <rect x="1460" y="240" width="20" height="14" rx="2"/>
+    </g>
+    <g transform="translate(0 280)">
+      <rect x="100" y="240" width="20" height="14" rx="2"/>
+      <rect x="160" y="240" width="20" height="14" rx="2"/>
+      <rect x="220" y="240" width="20" height="14" rx="2"/>
+      <rect x="280" y="240" width="20" height="14" rx="2"/>
+      <rect x="340" y="240" width="20" height="14" rx="2"/>
+      <rect x="400" y="240" width="20" height="14" rx="2"/>
+      <rect x="460" y="240" width="20" height="14" rx="2"/>
+      <rect x="520" y="240" width="20" height="14" rx="2"/>
+      <rect x="580" y="240" width="20" height="14" rx="2"/>
+      <rect x="1040" y="240" width="20" height="14" rx="2"/>
+      <rect x="1100" y="240" width="20" height="14" rx="2"/>
+      <rect x="1160" y="240" width="20" height="14" rx="2"/>
+      <rect x="1220" y="240" width="20" height="14" rx="2"/>
+      <rect x="1280" y="240" width="20" height="14" rx="2"/>
+      <rect x="1340" y="240" width="20" height="14" rx="2"/>
+      <rect x="1400" y="240" width="20" height="14" rx="2"/>
+      <rect x="1460" y="240" width="20" height="14" rx="2"/>
+    </g>
+  </g>
+</svg>
