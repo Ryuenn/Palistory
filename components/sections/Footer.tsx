@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react'
+import Image from 'next/image'
 import SectionBackground from '@/components/ui/SectionBackground'
 
 export default function Footer() {
@@ -119,10 +120,14 @@ export default function Footer() {
             variants={itemVariants}
             className="col-span-2 md:col-span-1 space-y-6"
           >
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-palistory-red to-palistory-gold rounded-lg flex items-center justify-center">
-                <span className="text-palistory-white text-sm font-bold">P</span>
-              </div>
+            <div className="flex items-center gap-3">
+              <Image
+                src="/images/palistory-logo.png"
+                alt="Palistory logo"
+                width={40}
+                height={40}
+                className="rounded-lg"
+              />
               <span className="text-2xl font-bold text-palistory-red">Palistory</span>
             </div>
             <p className="text-palistory-beige/80 text-sm leading-relaxed">

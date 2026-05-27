@@ -2,15 +2,17 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
+import { LucideIcon } from 'lucide-react'
 
 interface StatCardProps {
   label: string
   value: number
   suffix?: string
   delay?: number
+  icon: LucideIcon
 }
 
-export default function StatCard({ label, value, suffix = '', delay = 0 }: StatCardProps) {
+export default function StatCard({ label, value, suffix = '', delay = 0, icon: Icon }: StatCardProps) {
   const [displayValue, setDisplayValue] = useState(0)
   const ref = useRef<HTMLDivElement>(null)
   const [isVisible, setIsVisible] = useState(false)
@@ -22,17 +24,12 @@ export default function StatCard({ label, value, suffix = '', delay = 0 }: StatC
         observer.unobserve(entry.target)
       }
     })
-
-    if (ref.current) {
-      observer.observe(ref.current)
-    }
-
+    if (ref.current) observer.observe(ref.current)
     return () => observer.disconnect()
   }, [])
 
   useEffect(() => {
     if (!isVisible) return
-
     let current = 0
     const increment = value / 50
     const timer = setInterval(() => {
@@ -44,49 +41,30 @@ export default function StatCard({ label, value, suffix = '', delay = 0 }: StatC
         setDisplayValue(Math.floor(current))
       }
     }, 50)
-
     return () => clearInterval(timer)
   }, [isVisible, value])
 
   return (
     <motion.div
       ref={ref}
-      className="glassmorphism-dark p-6 md:p-8 rounded-xl border border-palistory-gold/20 hover-glow transition-all duration-300 group"
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      className="flex items-center gap-5 py-5 border-b border-white/10 last:border-0 group"
+      initial={{ opacity: 0, x: 20 }}
+      animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.6, delay }}
-      viewport={{ once: true }}
-      whileHover={{ y: -8, boxShadow: '0 0 30px rgba(200, 169, 107, 0.2)' }}
     >
-      <div className="space-y-4">
-        <motion.div
-          className="text-4xl md:text-5xl font-bold text-palistory-gold"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: (delay || 0) + 0.2 }}
-          viewport={{ once: true }}
-        >
-          {displayValue.toLocaleString()}{suffix}
-        </motion.div>
+      {/* Icon box */}
+      <div className="flex-shrink-0 w-[52px] h-[52px] rounded-xl bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors duration-300">
+        <Icon size={24} className="text-white/70" strokeWidth={1.5} />
+      </div>
 
-        <motion.p
-          className="text-sm md:text-base text-palistory-beige/80 leading-tight"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: (delay || 0) + 0.3 }}
-          viewport={{ once: true }}
-        >
+      {/* Text */}
+      <div className="flex flex-col gap-1">
+        <span className="text-xs uppercase tracking-[0.2em] text-white/50 font-semibold leading-none">
           {label}
-        </motion.p>
-
-        {/* Decorative Line */}
-        <motion.div
-          className="h-0.5 bg-gradient-to-r from-palistory-gold to-transparent"
-          initial={{ width: 0 }}
-          whileInView={{ width: '100%' }}
-          transition={{ duration: 0.8, delay: (delay || 0) + 0.4 }}
-          viewport={{ once: true }}
-        />
+        </span>
+        <span className="text-3xl font-bold text-white leading-none">
+          {displayValue.toLocaleString()}{suffix}
+        </span>
       </div>
     </motion.div>
   )

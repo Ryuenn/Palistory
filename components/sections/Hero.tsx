@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { Play } from 'lucide-react'
+import { Play, BookOpen, Image, Mic2, Clock } from 'lucide-react'
 import StatCard from '@/components/ui/StatCard'
 import ParticleBackground from '@/components/ui/ParticleBackground'
 
@@ -29,10 +29,10 @@ export default function Hero() {
   }, [])
 
   const stats = [
-    { label: 'Years Documented', value: 100, suffix: '+' },
-    { label: 'Photos Archived', value: 2547, suffix: '+' },
-    { label: 'Voices Recorded', value: 18000, suffix: '+' },
-    { label: 'Historical Records', value: 3800, suffix: '+' },
+    { label: 'Stories', value: 2547, suffix: '+', icon: BookOpen },
+    { label: 'Photos & Archives', value: 18000, suffix: '+', icon: Image },
+    { label: 'Voices Recorded', value: 3800, suffix: '+', icon: Mic2 },
+    { label: 'Years of History', value: 75, suffix: '+', icon: Clock },
   ]
 
   const scrollToSection = (href: string) => {
@@ -140,28 +140,28 @@ export default function Hero() {
               </motion.div>
             </motion.div>
 
-            {/* Right Side - Statistics Cards */}
+            {/* Right Side - Statistics Panel */}
             <motion.div
-              className="grid grid-cols-2 gap-4 md:gap-6"
+              className="hidden lg:flex justify-end"
               initial={{ opacity: 0, x: 40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
             >
-              {stats.map((stat, index) => (
-                <motion.div
-                  key={stat.label}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.6 + index * 0.1 }}
-                >
+              <div className="bg-black/30 backdrop-blur-md border border-white/10 rounded-2xl px-10 py-8 w-96">
+                <p className="text-xs uppercase tracking-[0.25em] text-white/40 font-semibold mb-6">
+                  By the numbers
+                </p>
+                {stats.map((stat, index) => (
                   <StatCard
+                    key={stat.label}
                     label={stat.label}
                     value={stat.value}
                     suffix={stat.suffix}
-                    delay={index}
+                    delay={0.6 + index * 0.12}
+                    icon={stat.icon}
                   />
-                </motion.div>
-              ))}
+                ))}
+              </div>
             </motion.div>
           </div>
         </div>
