@@ -13,17 +13,17 @@ export default function ParticleBackground() {
     if (!ctx) return
     const context = ctx
 
+    // Particle system
+    const particles: Particle[] = []
+    const particleCount = 30
+    const c = canvas
+
     // Set canvas size
     const resizeCanvas = () => {
       c.width = window.innerWidth
       c.height = window.innerHeight
     }
     resizeCanvas()
-
-    // Particle system
-    const particles: Particle[] = []
-    const particleCount = 30
-    const c = canvas
 
     class Particle {
       x: number
