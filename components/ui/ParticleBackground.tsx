@@ -11,6 +11,7 @@ export default function ParticleBackground() {
 
     const ctx = canvas.getContext('2d')
     if (!ctx) return
+    const context = ctx
 
     // Set canvas size
     const resizeCanvas = () => {
@@ -59,17 +60,17 @@ export default function ParticleBackground() {
       }
 
       draw() {
-        const gradient = ctx.createRadialGradient(
+        const gradient = context.createRadialGradient(
           this.x, this.y, 0,
           this.x, this.y, this.radius * 2
         )
         gradient.addColorStop(0, `rgba(200, 169, 107, ${this.opacity})`)
         gradient.addColorStop(1, `rgba(200, 169, 107, 0)`)
 
-        ctx.fillStyle = gradient
-        ctx.beginPath()
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2)
-        ctx.fill()
+        context.fillStyle = gradient
+        context.beginPath()
+        context.arc(this.x, this.y, this.radius, 0, Math.PI * 2)
+        context.fill()
       }
     }
 
@@ -82,8 +83,8 @@ export default function ParticleBackground() {
     let animationId: number
 
     const animate = () => {
-      ctx.fillStyle = 'rgba(11, 11, 11, 0.05)'
-      ctx.fillRect(0, 0, c.width, c.height)
+      context.fillStyle = 'rgba(11, 11, 11, 0.05)'
+      context.fillRect(0, 0, c.width, c.height)
 
       particles.forEach((particle, index) => {
         particle.update()
