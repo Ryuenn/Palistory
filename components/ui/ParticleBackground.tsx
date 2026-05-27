@@ -14,14 +14,15 @@ export default function ParticleBackground() {
 
     // Set canvas size
     const resizeCanvas = () => {
-      canvas.width = window.innerWidth
-      canvas.height = window.innerHeight
+      c.width = window.innerWidth
+      c.height = window.innerHeight
     }
     resizeCanvas()
 
     // Particle system
     const particles: Particle[] = []
     const particleCount = 30
+    const c = canvas
 
     class Particle {
       x: number
@@ -34,8 +35,8 @@ export default function ParticleBackground() {
       maxLife: number
 
       constructor() {
-        this.x = Math.random() * canvas.width
-        this.y = Math.random() * canvas.height
+        this.x = Math.random() * c.width
+        this.y = Math.random() * c.height
         this.vx = (Math.random() - 0.5) * 0.5
         this.vy = (Math.random() - 0.5) * 0.5
         this.radius = Math.random() * 2 + 0.5
@@ -50,8 +51,8 @@ export default function ParticleBackground() {
         this.life++
 
         // Bounce off edges
-        if (this.x < 0 || this.x > canvas.width) this.vx *= -1
-        if (this.y < 0 || this.y > canvas.height) this.vy *= -1
+        if (this.x < 0 || this.x > c.width) this.vx *= -1
+        if (this.y < 0 || this.y > c.height) this.vy *= -1
 
         // Fade out
         this.opacity = (this.maxLife - this.life) / this.maxLife * 0.3
@@ -82,7 +83,7 @@ export default function ParticleBackground() {
 
     const animate = () => {
       ctx.fillStyle = 'rgba(11, 11, 11, 0.05)'
-      ctx.fillRect(0, 0, canvas.width, canvas.height)
+      ctx.fillRect(0, 0, c.width, c.height)
 
       particles.forEach((particle, index) => {
         particle.update()
