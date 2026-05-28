@@ -116,7 +116,7 @@ export default function GetInvolved() {
             className="text-white/90 text-base leading-relaxed max-w-xs lg:text-right [text-shadow:0_1px_12px_rgba(0,0,0,0.8)]"
           >
             Be part of the movement to preserve truth, amplify voices, and build justice through
-            film. Whether you're a storyteller, artist, educator, or ally — there's a place for
+            film. Whether you&apos;re a storyteller, artist, educator, or ally — there&apos;s a place for
             you at Palistory.
           </motion.p>
         </div>

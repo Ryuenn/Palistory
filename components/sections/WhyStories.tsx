@@ -144,7 +144,7 @@ export default function WhyStories() {
               viewport={{ once: true }}
               className="text-gray-600 text-lg leading-relaxed"
             >
-              Stories are compelling and personal. They add color to history by providing valuable insight and information that can't be found in just facts and numbers. For this reason, Palestinians have long relied on the power of storytelling to keep their history and culture alive despite active suppression. History is best depicted through stories.
+              Stories are compelling and personal. They add color to history by providing valuable insight and information that can&apos;t be found in just facts and numbers. For this reason, Palestinians have long relied on the power of storytelling to keep their history and culture alive despite active suppression. History is best depicted through stories.
             </motion.p>
 
             <motion.div
