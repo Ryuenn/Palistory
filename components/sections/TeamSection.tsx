@@ -207,7 +207,7 @@ export default function TeamSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
             viewport={{ once: true }}
-            className="text-5xl sm:text-6xl font-bold text-palistory-white mb-6"
+            className="text-4xl sm:text-6xl font-bold text-palistory-white mb-6"
           >
             Palistory Team
           </motion.h2>

@@ -151,7 +151,7 @@ export default function StoryTellers() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
             viewport={{ once: true }}
-            className="text-5xl sm:text-6xl font-bold text-palistory-white mb-4"
+            className="text-4xl sm:text-6xl font-bold text-palistory-white mb-4"
           >
             Our Story Tellers
           </motion.h2>

@@ -122,7 +122,7 @@ export default function WhyStories() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
                 viewport={{ once: true }}
-                className="text-5xl sm:text-6xl lg:text-7xl font-bold text-palistory-black leading-[1.05]"
+                className="text-4xl sm:text-6xl lg:text-7xl font-bold text-palistory-black leading-[1.05]"
               >
                 Why <span className="text-palistory-red">Stories</span>
               </motion.h2>

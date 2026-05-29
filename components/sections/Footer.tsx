@@ -85,7 +85,7 @@ export default function Footer() {
               </p>
             </div>
             <motion.div
-              className="flex gap-3"
+              className="flex flex-col sm:flex-row gap-3"
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -97,7 +97,7 @@ export default function Footer() {
                 className="flex-1 px-6 py-3 bg-palistory-charcoal text-palistory-white rounded-lg border border-palistory-gold/20 focus:border-palistory-gold focus:outline-none transition-colors"
               />
               <motion.button
-                className="px-6 py-3 bg-palistory-red text-palistory-white rounded-lg font-semibold hover-glow"
+                className="px-6 py-3 bg-palistory-red text-palistory-white rounded-lg font-semibold hover-glow whitespace-nowrap"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

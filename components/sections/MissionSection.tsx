@@ -99,7 +99,7 @@ export default function MissionSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
               viewport={{ once: true }}
-              className="text-5xl sm:text-6xl lg:text-7xl font-bold text-palistory-white leading-[1.05] mb-8"
+              className="text-4xl sm:text-6xl lg:text-7xl font-bold text-palistory-white leading-[1.05] mb-8"
             >
               Palistory<br />
               <span className="text-palistory-red">Mission.</span>
@@ -126,7 +126,7 @@ export default function MissionSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.4 }}
               viewport={{ once: true }}
-              className="flex gap-10 mt-12 pt-8 border-t border-palistory-gold/10"
+              className="flex gap-6 sm:gap-10 mt-12 pt-8 border-t border-palistory-gold/10"
             >
               {stats.map((s) => (
                 <div key={s.l}>

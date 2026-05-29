@@ -105,13 +105,13 @@ export default function Donation() {
 
         {/* Custom Amount Section */}
         <motion.div
-          className="bg-gradient-to-br from-palistory-olive/10 to-palistory-gold/10 rounded-2xl p-12 border border-palistory-gold/20 glassmorphism"
+          className="bg-gradient-to-br from-palistory-olive/10 to-palistory-gold/10 rounded-2xl p-6 sm:p-12 border border-palistory-gold/20 glassmorphism"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="space-y-6">
               <h3 className="text-3xl font-bold text-palistory-white">
                 Make a Custom Donation

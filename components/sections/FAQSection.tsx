@@ -148,7 +148,7 @@ export default function FAQSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
                 viewport={{ once: true }}
-                className="text-4xl sm:text-5xl lg:text-6xl font-bold text-palistory-white leading-[1.1]"
+                className="text-3xl sm:text-5xl lg:text-6xl font-bold text-palistory-white leading-[1.1]"
               >
                 Things You Would Like To Know About
               </motion.h2>

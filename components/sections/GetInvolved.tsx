@@ -55,7 +55,8 @@ export default function GetInvolved() {
 
   const scrollCards = (dir: -1 | 1) => {
     if (!scrollRef.current) return
-    const cardWidth = scrollRef.current.offsetWidth / 4 + 20
+    const firstCard = scrollRef.current.querySelector('[class*="snap-start"]') as HTMLElement
+    const cardWidth = firstCard ? firstCard.offsetWidth + 20 : scrollRef.current.offsetWidth
     scrollRef.current.scrollBy({ left: dir * cardWidth, behavior: 'smooth' })
   }
 
@@ -101,7 +102,7 @@ export default function GetInvolved() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
               viewport={{ once: true }}
-              className="text-5xl sm:text-6xl lg:text-7xl font-bold text-palistory-white leading-[1.05]"
+              className="text-4xl sm:text-6xl lg:text-7xl font-bold text-palistory-white leading-[1.05]"
             >
               Stories That<br />
               <span className="text-palistory-red">Build Justice.</span>
@@ -159,7 +160,7 @@ export default function GetInvolved() {
                 transition={{ duration: 0.7, delay: (i % 4) * 0.1, ease: [0.22, 1, 0.36, 1] }}
                 viewport={{ once: true }}
                 whileHover={{ y: -10, transition: { duration: 0.26 } }}
-                className="group flex-none w-[calc(25%-15px)] min-w-[220px] rounded-2xl snap-start overflow-hidden relative cursor-pointer
+                className="group flex-none w-[80vw] sm:w-72 lg:w-[calc(25%-15px)] rounded-2xl snap-start overflow-hidden relative cursor-pointer
                            bg-black/40 border border-white/10
                            hover:bg-black/55 hover:border-palistory-red/40
                            backdrop-blur-md transition-colors duration-300 p-6"

@@ -19,7 +19,7 @@ export default function DonationCard({ tier }: DonationCardProps) {
   return (
     <motion.div
       className={`relative rounded-2xl overflow-hidden transition-all duration-500 h-full ${
-        tier.featured ? 'ring-2 ring-palistory-red scale-105 md:scale-100' : ''
+        tier.featured ? 'ring-2 ring-palistory-red sm:scale-105 md:scale-100' : ''
       }`}
       whileHover={{ y: tier.featured ? -12 : -8, scale: 1.02 }}
     >
